@@ -54,7 +54,7 @@ public class StarManager : MonoBehaviour
         }
     }
 
-    IEnumerator endGame()
+    IEnumerator endGame() //set to pause game after the last Star got captured
     {
         yield return 0;
         if (GameObject.FindGameObjectWithTag("Star") == null)
